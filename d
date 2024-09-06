@@ -1,0 +1,12 @@
+<!DOCTYPE html> <!-- 시작 -->
+<html>
+<head>
+    <title> 야임마!!!!!!!! </title>
+</head>
+<body style="background-color: darkslategrey;">
+    <iframe width="960" height="540" src="https://youtube.com/embed/qI13hUNeI5w?si=6LniBcVPh7qgxlzQ?autoplay=1" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; autoply" 
+allowfullscreen></iframe> <br>
+<img src="https://upload2.inven.co.kr/upload/2018/08/22/bbs/i16126850607.gif?MW=800" width="460" height="270"><br> 날 ㅈ같게 했어? 지옥을 보여줄게^^ 
+</body>
+</html> <!-- 끝 -->
