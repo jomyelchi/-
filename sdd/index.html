@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 이게 뭘까? </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #dontButton {
+            padding: 20px;
+            font-size: 20px;
+            background-color: #ff6347;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        #dontButton:hover {
+            background-color: #ff4500;
+        }
+        #popupContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            text-align: center;
+        }
+        #popupImage {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid black;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+        #popupMessage {
+            margin-top: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="dontButton"> 절대 누르지마! 그가 오고 있어 </button>
+
+    <div id="overlay"></div>
+    <div id="popupContainer">
+        <img id="popupImage" src="C:\Users\User\Desktop\web img\1.jpg" width="540" height="720">
+        <div id="popupMessage"> 누르지 말라니까.. 망치 살인마 나 강림!! </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('dontButton');
+        const popupContainer = document.getElementById('popupContainer');
+        const popupImage = document.getElementById('popupImage');
+        const overlay = document.getElementById('overlay');
+        const popupMessage = document.getElementById('popupMessage');
+
+        button.addEventListener('click', () => {
+            overlay.style.display = 'block';
+            popupContainer.style.display = 'block';
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popupContainer.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
