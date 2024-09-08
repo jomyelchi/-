@@ -12,7 +12,7 @@ document.getElementById("dontClickButton").addEventListener("click", function() 
         document.getElementById("message").textContent = "망치 살인마 등장 나, 강림.";
 
          // 이미지의 src 속성에 링크 추가 (웹 이미지 링크 사용)
-         document.getElementById("hiddenImage").src = "";
+         document.getElementById("hiddenImage").src = "https://github.com/jomyelchi/userid.github.io/blob/main/1.jpg?raw=true";
 
         // 이미지 표시 (display: none -> block)
         document.getElementById("hiddenImage").style.display = "block";
